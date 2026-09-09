@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+article {
+}
+
+.egesz1 {
+  text-align: center;
+}
+
+.egesz2 {
+  text-align: center;
+}
+
+.egesz3 {
+  text-align: center;
+}
+
+.egesz4 {
+  text-align: center;
+}
