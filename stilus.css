@@ -6,27 +6,89 @@ body {
   max-width: 1440px;
   margin: auto;
   padding: 20px;
+  border: 1px solid black;
 }
 
 h1 {
   text-align: center;
+  background-color: aquamarine;
+  padding: 20px;
 }
 
 article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+}
+
+nav {
+  background-color: lightgray;
+  padding: 7px;
+  margin-bottom: 7px;
+}
+
+li:hover {
+  border: 1px solid black;
+  padding-bottom: 5px;
+  border-radius: 5px;
 }
 
 .egesz1 {
   text-align: center;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 7px;
 }
 
 .egesz2 {
   text-align: center;
+  border: 1px solid rgb(235, 11, 11);
+  border-radius: 7px;
 }
 
 .egesz3 {
   text-align: center;
+  border: 1px solid rgb(0, 0, 255);
+  border-radius: 7px;
 }
 
 .egesz4 {
   text-align: center;
+  border: 1px solid green;
+  border-radius: 7px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(224, 208, 208);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  article {
+    grid-template-columns: 1fr;
+  }
 }
